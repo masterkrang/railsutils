@@ -1,1 +1,14 @@
-# empty read me
+# glamstagram
+
+watch out for the config/initializers/instagram.rb which has this call
+
+require "instagram"
+
+Instagram.configure do |config|
+  config.client_id = "client id"
+  config.client_secret = "client secret"
+end
+
+CALLBACK_URL = "http://0.0.0.0:3000/session/callback"
+
+
